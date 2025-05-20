@@ -36,11 +36,38 @@ nav a[aria-current='page'] {
   background-color: #d4d4d4;
 }
 
-main {
-  padding: 1rem;
+section {
+  min-height: 100vh;
 }
 
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+
+.sectionHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImg {
+  background-color: aquamarine;
+  width: 50%;
+}
+
+.heroText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Om knapper er store vurder column på mobil*/
+.heroButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
 }

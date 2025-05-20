@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
+  <!-- Head er kun for nettleser informasjon -->
   <head>
-    <title>Home</title>
+    <title>Hjem</title>
+    <link rel="icon" type="image/x-icon" href="html.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+
+  <!-- Body er kun for det som skal synes på selve nettsiden -->
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header>
+      <img class="headerLogo" src="images/html.png" alt="Logo with a code bracket." />
+      <nav>
+        <!-- Navigasjons elementene skal være en ul-liste. Bookmark anchors -->
+        <a href="">Nav 1</a>
+        <a href="">Nav 2</a>
+        <a href="">Nav 3</a>
+      </nav>
+    </header>
     <main>
-      <h1>Home page</h1>
+      <section class="sectionHero">
+        <!-- Hero-section -->
+        <img src="heroImg" alt="Bilde av en matrett">
+        <div class="heroText">
+          <h1>Resturant!</h1>
+          <p>Slagord for resturant</p>
+          <div class="heroButtons">
+            <button>Bestill bord</button>
+            <button>Bestill levering</button>
+          </div> 
+        </div>
+      </section>
+
+      <section>
+        <!-- Seksjon 2 -->
+      </section>
+
+      <section>
+        <!-- Seksjon 3 -->
+      </section>
     </main>
+    <footer>
+      <h4>Laget av Julie</h4>
+    </footer>
   </body>
 </html>
