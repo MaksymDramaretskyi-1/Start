@@ -2,11 +2,64 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+  --accent-color: #74C69D;
+  --bg-color-primary: white;
+  --bg-color-secondary: black;
+
+  --font-family-base: "Crimson Text";
+  --font-family-heading: 'Roboto', sans-serif;
+  --font-size-base: 16px;
+  --font-size-first: 24px;
+  --font-size-secondary: 32px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semiBold: 600;
+  --font-weight-bold: 700;
+
+  --spacing: 10px;
+
+  --default-padding-all-sides-20px: 20px;
+  --default-padding-all-sides: 40px;
+  --default-padding-top: 40px;
+  --default-padding-left: 40px;
+  --default-padding-right: 40px;
+  --default-padding-buttom: 50px;
+  --gap-base: 20px;
+
+  --primary-margin: 0px;
+  --secondary-margin: 20px;
+  --default-margin: 40px;
+  --default-margin-top: 40px;
+  --default-margin-left: 40px;
+  --default-margin-right: 40px;
+  --default-margin-button: 40px;
+
+  --default-border-radius: 10px;
+}
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-style: normal;
   color: black;
   background-color: white;
+}
+
+.wrapper {
+  padding: 35px 130px 40px;
+}
+
+.bg-color {
+  background-color: var(--accent-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
@@ -14,21 +67,14 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  gap: 30px;
 }
 
 nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
   text-decoration: none;
-  color: #555;
+  color: var(--primary-color);
 }
 
 nav a[aria-current='page'] {
