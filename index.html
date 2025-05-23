@@ -16,28 +16,41 @@
   <!-- Body er kun for det som skal synes på selve nettsiden -->
   <body>
     <div class="bg-color">
-      <header class="wrapper">
-        <img class="headerLogo" src="images/Logo.svg" alt="Logo with a code bracket." />
-        <nav>
-          <!-- Navigasjons elementene skal være en ul-liste. Bookmark anchors -->
-          <a href="#">Home</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-        </nav>
-      </header>
+      <div class="wrapper">
+        <header>
+          <img class="headerLogo" src="images/Logo.svg" alt="Logo with a code bracket." />
+          <nav class="nav">
+            <!-- Navigasjons elementene skal være en ul-liste. Bookmark anchors -->
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button> 
+          
+        </header>
+      </div>
     </div>
     <main>
+      <!-- Hero-section -->
       <section class="sectionHero">
-        <!-- Hero-section -->
-        <img src="heroImg" alt="Bilde av en matrett">
-        <div class="heroText">
-          <h1>Resturant!</h1>
-          <p>Slagord for resturant</p>
-          <div class="heroButtons">
-            <button>Bestill bord</button>
-            <button>Bestill levering</button>
-          </div> 
+        <div class="wrapper">
+          <div class="heroBlock">
+            <img src="./images/BannerImg.svg" alt="Bilde av en matrett">
+
+            <div class="heroText">
+              <h2>WELCOME</h2>
+              <h1>Lorem ipsum dolor sit amet consectetur </h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+              <button>Explore</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -50,7 +63,7 @@
       </section>
     </main>
     <footer>
-      <h4>Laget av Julie</h4>
+      <h4>Laget av Maksym</h4>
     </footer>
   </body>
 </html>
