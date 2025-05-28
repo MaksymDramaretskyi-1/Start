@@ -263,8 +263,32 @@ nav ul li, a {
   }
 
 
+/*section-partners*/
 
+  .section-partners {
+    text-align: center;
+    background-color: var(--bg-primary-color);
+  }
 
+  .section-partners h3 {
+    color: var(--accent-color);
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 125%;
+    text-transform: uppercase;
+  }
+
+  .section-partners h2 {
+    font-size: var(--font-size-secondary);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .section-partners p {
+    color: var(--primary-color);
+    font-size: var(--font-size-first);
+    font-weight: var(--font-weight-regular);
+  } 
 }
 
 
